@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		var asciiVideo = new ASCIIVideo(text);
-		var font = new Font("Monospace 12", Font.PLAIN, 2);
+		var font = new Font("Monospace 12", Font.PLAIN, 1);
 		
 		if (font.getSize() == 1) frame.setSize(480, 750);
 		else frame.setSize(780, 960);
