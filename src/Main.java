@@ -1,3 +1,4 @@
+package dada;
 import java.awt.Font;
 
 import javax.swing.JFrame; 
@@ -9,10 +10,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		var asciiVideo = new ASCIIVideo(text);
-		var font = new Font("Monospace 12", Font.PLAIN, 1);
+		var font = new Font("Monospace 12", Font.PLAIN, 3);
 		
-		if (font.getSize() == 1) frame.setSize(480, 750);
-		else frame.setSize(780, 960);
+		frame.setSize(960, 1080);
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);

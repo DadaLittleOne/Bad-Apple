@@ -1,3 +1,5 @@
+package dada;
+
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -16,7 +18,7 @@ public class ASCIIVideo {
 	private final int FRAME_COUNT = 6572;
 	private int FRAME_DELAY = 19;
 	
-	private final char[] density = {'Q','_','8','&','o',':','*','.',' '};
+	private final char[] density = {'#','_','#','_','_','_','_','_','_'};
 	
 	public ASCIIVideo(JTextArea text) { // Constructor
 		musicThread.start();
@@ -42,7 +44,7 @@ public class ASCIIVideo {
 			}
 			Instant end = Instant.now();
 			Duration timeElapsed = Duration.between(start, end);
-			FRAME_DELAY = Clamp(41 - (int) (FRAME_DELAY + (timeElapsed.toMillis() / 25)), 0, 100, false, true);
+			FRAME_DELAY = Clamp(36 - (int) (FRAME_DELAY + (timeElapsed.toMillis() / 25)), 0, 100, false, true);
 		}
 	}
 
